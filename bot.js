@@ -1,10 +1,10 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();  
     console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Type ➡️ -js.codes`, "https://www.twitch.tv/matrex");
+client.user.setGame(`Type ➡️ -helpjs`, "https://www.twitch.tv/matrex");
 client.user.setStatus("online");
 client.on("message", message => {
- if (message.content === "-js.codes") {
+ if (message.content === "-helpjs") {
   const embed = new Discord.RichEmbed() 
       .setColor("GOLD")
       .setDescription(`
